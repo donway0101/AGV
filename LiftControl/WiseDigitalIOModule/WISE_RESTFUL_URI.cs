@@ -1,0 +1,42 @@
+﻿
+namespace LiftControl
+{
+    public enum WISE_RESTFUL_URI
+    {
+        config,
+        file_xfer,
+        profile,
+        sys_info,
+        gen_config,
+        control,
+        net_basic,
+        net_config,
+        di_config,
+        di_value,
+        do_config,
+        do_value,
+        ai_genconfig,
+        ai_config,
+        ai_value,
+        modbus_coilconfig,
+        modbus_regconfig,
+        modbus_coilbas,
+        modbus_coillen,
+        modbus_regbas,
+        modbus_reglen,
+        accessctrl,
+        log_dataoption,
+        log_control,
+        log_output,
+        log_message,
+        log_event,
+        logex_output,
+        logex_file,
+        logex_list,
+        datastream,
+        p2p_mode,
+        p2p_basic,
+        p2p_advanced,
+        wlan_config,
+    }
+}

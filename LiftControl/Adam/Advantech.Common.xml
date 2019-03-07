@@ -1,0 +1,3883 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Advantech.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Advantech.Common.Baudrate">
+            <summary>
+            Baud rate settings.
+            Supported Rates: 110, 300, 600, 1200, 2400, 4800, 9600
+            14400, 19200, 38400, 56000, 57600, 115200, 128000, 256000
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_110">
+            <summary>
+            Baudrate 110
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_300">
+            <summary>
+            Baudrate 300
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_600">
+            <summary>
+            Baudrate 600
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_1200">
+            <summary>
+            Baudrate 1200
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_2400">
+            <summary>
+            Baudrate 2400
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_4800">
+            <summary>
+            Baudrate 4800
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_9600">
+            <summary>
+            Baudrate 9600
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_14400">
+            <summary>
+            Baudrate 14400
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_19200">
+            <summary>
+            Baudrate 19200
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_38400">
+            <summary>
+            Baudrate 38400
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_56000">
+            <summary>
+            Baudrate 56000
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_57600">
+            <summary>
+            Baudrate 57600
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_115200">
+            <summary>
+            Baudrate 115200
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_128000">
+            <summary>
+            Baudrate 128000
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Baudrate.Baud_256000">
+            <summary>
+            Baudrate 256000
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Parity">
+            <summary>
+            Parity settings
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Parity.None">
+            <summary>
+            Characters do not have a parity bit.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Parity.Odd">
+            <summary>
+            Set if there are an odd number of 1s in the character.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Parity.Even">
+            <summary>
+            Set if there are an even number of 1s in the character.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Parity.Mark">
+            <summary>
+            The parity bit is always 1.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Parity.Space">
+            <summary>
+            The parity bit is always 0.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Databits">
+            <summary>
+            Data bits setting.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Databits.Five">
+            <summary>
+            Five bits per data byte.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Databits.Six">
+            <summary>
+            Six bits per data byte.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Databits.Seven">
+            <summary>
+            Seven bits per data byte.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Databits.Eight">
+            <summary>
+            Eight bits per data byte.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Stopbits">
+            <summary>
+            Stop bit settings
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Stopbits.One">
+            <summary>
+            Line is asserted for 1 bit duration at end of each character
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Stopbits.OneAndHalf">
+            <summary>
+            Line is asserted for 1.5 bit duration at end of each character
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Stopbits.Two">
+            <summary>
+            Line is asserted for 2 bit duration at end of each character
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.FlowControl">
+            <summary>
+            FlowControl settings.
+            Supported type: Hardware, Xon/Xoff, None.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.FlowControl.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.FlowControl.XonXoff">
+            <summary>
+            Xon/Xoff
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.FlowControl.Hardware">
+            <summary>
+            Hardware
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.FlagSetting">
+            <summary>
+            Flag settings.
+            Supported : Off, On.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.FlagSetting.Off">
+            <summary>
+            Flag is Off
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.FlagSetting.On">
+            <summary>
+            Flag is On
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.DcbFlagFields">
+            <summary>
+            The DCB flag structure
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fBinary">
+            <summary>
+            fBinary
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fParity">
+            <summary>
+            fParity
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fOutxCtsFlow">
+            <summary>
+            fOutxCtsFlow
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fOutxDsrFlow">
+            <summary>
+            fOutxDsrFlow
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fDtrControl">
+            <summary>
+            fDtrControl
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fDsrSensitivity">
+            <summary>
+            fDsrSensitivity
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fTXContinueOnXoff">
+            <summary>
+            fTXContinueOnXoff
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fOutX">
+            <summary>
+            fOutX
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fInX">
+            <summary>
+            fInX
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fErrorChar">
+            <summary>
+            fErrorChar
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fNull">
+            <summary>
+            fNull
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fRtsControl">
+            <summary>
+            fRtsControl
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fAbortOnError">
+            <summary>
+            fAbortOnError
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.DcbFlagFields.fDummy2">
+            <summary>
+            fDummy2
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Purge">
+            <summary>
+            Purge settings
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Purge.TxAbort">
+            <summary>
+            Terminate all write operation
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Purge.RxAbort">
+            <summary>
+            Terminate all read operation
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Purge.TxClear">
+            <summary>
+            Clear output buffer
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Purge.RxClear">
+            <summary>
+            Clear input buffer
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Event">
+            <summary>
+            Event settings
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Break">
+            <summary>
+            A break was detected on input.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Cts">
+            <summary>
+            The CTS (clear-to-send) signal changed state.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Dsr">
+            <summary>
+            The DSR (data-set-ready) signal changed state.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Err">
+            <summary>
+            A line-status error occurred.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Ring">
+            <summary>
+            A ring indicator was detected.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.Rlsd">
+            <summary>
+            The RLSD (receive-line-signal-detect) signal changed state.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.RxChar">
+            <summary>
+            A character was received and placed in the input buffer.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.RxFlag">
+            <summary>
+            The event character was received and placed in the input buffer.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Event.TxEmpty">
+            <summary>
+            The last character in the output buffer was sent.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ComPort">
+            <summary>
+            Serial communications base interface class library for Windows CE.
+            This class is provided by Advantech.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.CreateFile(System.String,System.UInt32,System.UInt32,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)">
+            <summary>
+            The CreateFile function creates or opens any of the following 
+            objects and returns a handle that can be used to access the object: 
+            Consoles, Communications resources, Directories (open only), 
+            Disk devices, Files, Mailslots, Pipes 
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.CloseHandle(System.IntPtr)">
+            <summary>
+            The CloseHandle function closes an open object handle.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.ReadFile(System.IntPtr,System.Byte[],System.UInt32,System.UInt32@,System.IntPtr)">
+            <summary>
+            The ReadFile function reads data from a file, starting at the 
+            position indicated by the file pointer. After the read operation 
+            has been completed, the file pointer is adjusted by the number 
+            of bytes actually read, unless the file handle is created with the 
+            overlapped attribute. If the file handle is created for overlapped 
+            input and output (I/O), the application must adjust the position of 
+            the file pointer after the read operation. 
+            This function is designed for both synchronous and asynchronous 
+            operation. The ReadFileEx function is designed solely for asynchronous 
+            operation. It lets an application perform other processing during a 
+            file read operation.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.WriteFile(System.IntPtr,System.Byte[],System.UInt32,System.UInt32@,System.IntPtr)">
+            <summary>
+            The WriteFile function writes data to a file and is designed for both 
+            synchronous and asynchronous operation. The function starts writing data 
+            to the file at the position indicated by the file pointer. After the write 
+            operation has been completed, the file pointer is adjusted by the number of 
+            bytes actually written, except when the file is opened with FILE_FLAG_OVERLAPPED. 
+            If the file handle was created for overlapped input and output (I/O), the 
+            application must adjust the position of the file pointer after the write 
+            operation is finished. 
+            This function is designed for both synchronous and asynchronous operation. 
+            The WriteFileEx function is designed solely for asynchronous operation. 
+            It lets an application perform other processing during a file write operation.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.PurgeComm(System.IntPtr,System.UInt32)">
+            <summary>
+            The PurgeComm function discards all characters from the output or input 
+            buffer of a specified communications resource. It can also terminate any 
+            pending read or write operations on the resource. 
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetCommMask(System.IntPtr,System.UInt32@)">
+            <summary>
+            The GetCommMask function retrieves the value of the event mask 
+            for a specified communications device.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetCommMask(System.IntPtr,System.UInt32)">
+            <summary>
+            The SetCommMask function specifies a set of events to be monitored 
+            for a communications device.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.WaitCommEvent(System.IntPtr,System.UInt32@,System.IntPtr)">
+            <summary>
+            The WaitCommEvent function waits for an event to occur 
+            for a specified communications device. The set of events 
+            that are monitored by this function is contained in the 
+            event mask associated with the device handle. 
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetCommState(System.IntPtr,Advantech.Common.ComPort.DCB@)">
+            <summary>
+            The GetCommState function retrieves the current control settings for 
+            a specified communications device.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetCommState(System.IntPtr,Advantech.Common.ComPort.DCB@)">
+            <summary>
+            The SetCommState function configures a communications device according to the 
+            specifications in a device control block (a DCB structure). The function 
+            reinitializes all hardware and control settings, but it does not empty output 
+            or input queues.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetCommTimeouts(System.IntPtr,Advantech.Common.ComPort.COMMTIMEOUTS@)">
+            <summary>
+            The GetCommTimeouts function retrieves the time-out parameters for
+            all read and write operations on a specified communications device.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetCommTimeouts(System.IntPtr,Advantech.Common.ComPort.COMMTIMEOUTS@)">
+            <summary>
+            The SetCommTimeouts function sets the time-out parameters for all read and 
+            write operations on a specified communications device.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ComPort.#ctor(System.Int32)">
+            <summary>
+            The ComPort class constructor.
+            </summary>
+            <param name="i_i32Port">The port number which is ranged from 1 to 256</param>
+        </member>
+        <member name="M:Advantech.Common.ComPort.#ctor(System.String)">
+            <summary>
+            The ComPort class constructor.
+            </summary>
+            <param name="i_szPort">The port name</param>
+        </member>
+        <member name="M:Advantech.Common.ComPort.OpenComPort">
+            <summary>
+            Open the COM port and get the COM port setting from system
+            </summary>
+            <returns>True if port opened successfully.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.CloseComPort">
+            <summary>
+            Close the COM port.
+            </summary>
+            <returns>True if executed successfully.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetComPortState(Advantech.Common.Baudrate,Advantech.Common.Databits,Advantech.Common.Parity,Advantech.Common.Stopbits)">
+            <summary>
+            Set the COM port state.
+            </summary>
+            <param name="i_i32Baudrate">
+            Baud rate at which the communications device operates.
+            Supported Rates: 
+            Baudrate.Baud_110, Baudrate.Baud_300, Baudrate.Baud_600, 
+            Baudrate.Baud_1200, Baudrate.Baud_2400, Baudrate.Baud_4800, 
+            Baudrate.Baud_9600, Baudrate.Baud_14400, Baudrate.Baud_19200, 
+            Baudrate.Baud_38400, Baudrate.Baud_56000, Baudrate.Baud_57600, 
+            Baudrate.Baud_115200, Baudrate.Baud_128000, Baudrate.Baud_256000
+            </param>
+            <param name="i_btDataBits">
+            Number of bits in the bytes transmitted and received.
+            Supported: 
+            Databits.Five, Databits.Six, Databits.Seven, Databits.Eight
+            </param>
+            <param name="i_btParity">
+            Parity scheme to be used. This member can be one of the following values.
+            Supported:
+            Parity.None, Parity.Odd, Parity.Even, Parity.Mark, Parity.Space
+            </param>
+            <param name="i_btStop">
+            Number of stop bits to be used. This member can be 
+            Supported:
+            Stopbits.One, Stopbits.OneFive, Stopbits.Two.
+            </param>
+            <returns>True if successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetComPortState(Advantech.Common.Baudrate,Advantech.Common.Databits,Advantech.Common.Parity,Advantech.Common.Stopbits,Advantech.Common.FlowControl)">
+            <summary>
+            Set the COM port state.
+            </summary>
+            <param name="i_i32Baudrate">
+            Baud rate at which the communications device operates.
+            Supported Rates: 
+            Baudrate.Baud_110, Baudrate.Baud_300, Baudrate.Baud_600, 
+            Baudrate.Baud_1200, Baudrate.Baud_2400, Baudrate.Baud_4800, 
+            Baudrate.Baud_9600, Baudrate.Baud_14400, Baudrate.Baud_19200, 
+            Baudrate.Baud_38400, Baudrate.Baud_56000, Baudrate.Baud_57600, 
+            Baudrate.Baud_115200, Baudrate.Baud_128000, Baudrate.Baud_256000
+            </param>
+            <param name="i_btDataBits">
+            Number of bits in the bytes transmitted and received.
+            Supported: 
+            Databits.Five, Databits.Six, Databits.Seven, Databits.Eight
+            </param>
+            <param name="i_btParity">
+            Parity scheme to be used. This member can be one of the following values.
+            Supported:
+            Parity.None, Parity.Odd, Parity.Even, Parity.Mark, Parity.Space
+            </param>
+            <param name="i_btStop">
+            Number of stop bits to be used. This member can be 
+            Supported:
+            Stopbits.One, Stopbits.OneFive, Stopbits.Two.
+            </param>
+            <param name="i_btFlowControl">
+            Flow Control
+            Supported type:
+            Hardware, Xon/Xoff, None.
+            </param>
+            <returns>True if successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetDcbFlag(System.Int32,System.Int32)">
+            <summary>
+            Set the Dcb Flag.
+            </summary>
+            <param name="i_i32WhichFlag">
+            Set the flags in the DCB (serial. Comms)
+            The DCB flag values are bit fields in the DCB structure.
+            DWORD fBinary  :1;            // Bit 0
+            DWORD fParity  :1;            // Bit 1
+            DWORD fOutxCtsFlow  :1;       // Bit 2
+            DWORD fOutxDsrFlow  :1;       // Bit 3
+            DWORD fDtrControl  :2;        // Bit 4 - 5
+            DWORD fDsrSensitivity  :1;    // Bit 6
+            DWORD fTXContinueOnXoff  :1;  // Bit 7
+            DWORD fOutX  :1;              // Bit 8
+            DWORD fInX  :1;               // Bit 9
+            DWORD fErrorChar  :1;         // Bit 10
+            DWORD fNull  :1;              // Bit 11
+            DWORD fRtsControl  :2;        // Bit 12 - 13
+            DWORD fAbortOnError  :1;      // Bit 14
+            DWORD fDummy2  :17;           // Bit 15 - 31
+            </param>
+            <param name="i_i32SettingValue">
+            Number of application-specific values.
+            </param>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetComPortState(Advantech.Common.Baudrate@,Advantech.Common.Databits@,Advantech.Common.Parity@,Advantech.Common.Stopbits@)">
+            <summary>
+            Read the device control settings to the class DCB structure.
+            </summary>
+            <param name="o_i32Baudrate">
+            Baud rate at which the communications device operates.
+            Supported Rates: 
+            Baudrate.Baud_110, Baudrate.Baud_300, Baudrate.Baud_600, 
+            Baudrate.Baud_1200, Baudrate.Baud_2400, Baudrate.Baud_4800, 
+            Baudrate.Baud_9600, Baudrate.Baud_14400, Baudrate.Baud_19200, 
+            Baudrate.Baud_38400, Baudrate.Baud_56000, Baudrate.Baud_57600, 
+            Baudrate.Baud_115200, Baudrate.Baud_128000, Baudrate.Baud_256000
+            </param>
+            <param name="o_btDataBits">
+            Number of bits in the bytes transmitted and received.
+            Supported: 
+            Databits.Five, Databits.Six, Databits.Seven, Databits.Eight
+            </param>
+            <param name="o_btParity">
+            Parity scheme using. This member can be one of the following values.
+            Supported:
+            Parity.None, Parity.Odd, Parity.Even, Parity.Mark, Parity.Space
+            </param>
+            <param name="o_btStop">
+            Number of stop bits using. This member can be 
+            Supported:
+            Stopbits.One, Stopbits.OneFive, Stopbits.Two.
+            </param>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetComPortTimeout(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Update the COM port timeout.
+            </summary>
+            <param name="i_i32ReadInterval">Read interval timeout in milli-seconds.</param>
+            <param name="i_i32ReadTotalConstant">Read total timeout constant in milli-seconds.</param>
+            <param name="i_i32ReadTotalMultiplier">Read total timeout multiplier in milli-seconds.</param>
+            <param name="i_i32WriteTotalConstant">Write total timeout constant in milli-seconds.</param>
+            <param name="i_i32WriteTotalMultiplier">Write total timeout multiplier in milli-seconds.</param>
+            <returns>True if update successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetComPortTimeout(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Get the COM port timeout.
+            </summary>
+            <param name="o_i32ReadInterval">Read interval timeout in milli-seconds.</param>
+            <param name="o_i32ReadTotalConstant">Read total timeout constant in milli-seconds.</param>
+            <param name="o_i32ReadTotalMultiplier">Read total timeout multiplier in milli-seconds.</param>
+            <param name="o_i32WriteTotalConstant">Write total timeout constant in milli-seconds.</param>
+            <param name="o_i32WriteTotalMultiplier">Write total timeout multiplier in milli-seconds.</param>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetComPortEventMask(System.Int32)">
+            <summary>
+            Set the COM port events to be monitored
+            </summary>
+            <param name="i_i32Event">
+            The value could be the combination of 
+            Event.BREAK
+            Event.CTS
+            Event.DSR
+            Event.ERR
+            Event.RING
+            Event.RLSD
+            Event.RXCHAR
+            Event.RXFLAG
+            Event.TXEMPTY
+            </param>
+            <returns>True if update successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetComPortEventMask(System.Int32@)">
+            <summary>
+            Get the COM port events monitored
+            </summary>
+            <param name="o_i32Event">
+            The value could be the combination of 
+            Event.BREAK
+            Event.CTS
+            Event.DSR
+            Event.ERR
+            Event.RING
+            Event.RLSD
+            Event.RXCHAR
+            Event.RXFLAG
+            Event.TXEMPTY
+            </param>
+            <returns>True if get successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.WaitComPortEvent(System.Int32@)">
+            <summary>
+            Wait for an event to occur for the COM port.
+            </summary>
+            <param name="o_i32Event">
+            The event occurs. It could be one of
+            Event.BREAK
+            Event.CTS
+            Event.DSR
+            Event.ERR
+            Event.RING
+            Event.RLSD
+            Event.RXCHAR
+            Event.RXFLAG
+            Event.TXEMPTY
+            </param>
+            <returns>True if get successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.SetPurge(System.Int32)">
+            <summary>
+            Flush the I/O buffers.
+            </summary>
+            <param name="i_iFlags">
+            The value could be the combination of 
+            Purge.TXABORT
+            Purge.RXABORT
+            Purge.TXCLEAR
+            Purge.RXCLEAR
+            </param>
+            <returns>True if update successful.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetPortNum">
+            <summary>
+            Get the port number for this object.
+            </summary>
+            <returns>The port number.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.Send(System.Int32,System.Byte[])">
+            <summary>
+            Send binary data to this COM port.
+            </summary>
+            <param name="i_i32Len">The length of data to write</param>
+            <param name="i_btData">The data buffer</param>
+            <returns>The number of bytes sent.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.Send(System.String)">
+            <summary>
+            Send a string to this COM port.
+            </summary>
+            <param name="i_szData">The string data</param>
+            <returns>The number of bytes sent.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.Recv(System.Int32,System.Byte[]@)">
+            <summary>
+            Receive binary data from this COM port.
+            </summary>
+            <param name="i_i32Len">The length of data to read</param>
+            <param name="o_btData">The data buffer which must have enough space</param>
+            <returns>The number of bytes received.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.Recv(System.String@)">
+            <summary>
+            Receive string from this COM port. 
+            If the carrage return character is received, this function will assume this is the end of the string.
+            The maximum length of string can be received is 1024.
+            </summary>
+            <param name="o_szData">The string</param>
+            <returns>The length of string received.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.Recv(System.Byte[]@)">
+            <summary>
+            Receive string from this COM port. 
+            If the carrage return character is received, this function will assume this is the end of the string.
+            The maximum length of string can be received is 1024.
+            </summary>
+            <param name="o_byData">The receiving byte array.</param>
+            <returns>The length of string received.</returns>
+        </member>
+        <member name="M:Advantech.Common.ComPort.GetComPortLastError">
+            <summary>
+            Get the last error when calling Win API.
+            </summary>
+            <returns>The error code.</returns>
+        </member>
+        <member name="P:Advantech.Common.ComPort.IsOpen">
+            <summary>
+            Get the COM port open status.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ComPort.DCB">
+            <summary>
+            The DCB structure defines the control setting for a serial communications device. 
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.dcbLength">
+            <summary>
+            Length, in bytes, of the DCB structure
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.baudRate">
+            <summary>
+            Baud rate at which the communications device operates.
+            Supported Rates: 110, 300, 600, 1200, 2400, 4800, 9600
+            14400, 19200, 38400, 56000, 57600, 115200, 128000, 256000
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.dwFlag">
+            <summary>
+            Packed bitfield from win32 struct. 
+            </summary>
+            fBinary:1 - Indicates whether binary mode is enabled. 
+            Windows does not support nonbinary mode transfers, so this member must be TRUE.
+              
+            fParity:1 - Indicates whether parity checking is enabled. 
+            If this member is TRUE, parity checking is performed and errors are reported. 
+            
+            fOutxCtsFlow:1 - Indicates whether the CTS (clear-to-send) signal is monitored 
+            for output flow control. If this member is TRUE and CTS is turned off, output 
+            is suspended until CTS is sent again. 
+            
+            fOutxDsrFlow:1 - Indicates whether the DSR (data-set-ready) signal is monitored 
+            for output flow control. If this member is TRUE and DSR is turned off, output is 
+            suspended until DSR is sent again. 
+            
+            fDtrControl:2 - DTR (data-terminal-ready) flow control. This member can be one 
+            of the following values. 
+            	DTR_CONTROL_DISABLE		Disables the DTR line when the device is opened and
+            							leaves it disabled. 
+            	DTR_CONTROL_ENABLE		Enables the DTR line when the device is opened and
+            							leaves it on. 
+            	DTR_CONTROL_HANDSHAKE	Enables DTR handshaking. If handshaking is enabled,
+            							it is an error for the application to adjust the line
+            							by using the EscapeCommFunction function. 
+            
+            fDsrSensitivity:1 - Indicates whether the communications driver is sensitive to 
+            the state of the DSR signal. If this member is TRUE, the driver ignores any bytes 
+            received, unless the DSR modem input line is high. 
+            
+            fTXContinueOnXoff:1 - Indicates whether transmission stops when the input buffer 
+            is full and the driver has transmitted the XoffChar character. If this member is 
+            TRUE, transmission continues after the input buffer has come within XoffLim bytes 
+            of being full and the driver has transmitted the XoffChar character to stop 
+            receiving bytes. If this member is FALSE, transmission does not continue until 
+            the input buffer is within XonLim bytes of being empty and the driver has 
+            transmitted the XonChar character to resume reception. 
+            
+            fOutX:1 - Indicates whether XON/XOFF flow control is used during transmission. 
+            If this member is TRUE, transmission stops when the XoffChar character is received 
+            and starts again when the XonChar character is received.
+            
+            fInX:1 -  Indicates whether XON/XOFF flow control is used during reception. 
+            If this member is TRUE, the XoffChar character is sent when the input buffer 
+            comes within XoffLim bytes of being full, and the XonChar character is sent 
+            when the input buffer comes within XonLim bytes of being empty. 
+            
+            fErrorChar: 1 -  Indicates whether bytes received with parity errors are replaced 
+            with the character specified by the ErrorChar member. If this member is TRUE and 
+            the fParity member is TRUE, replacement occurs.
+            
+            fNull:1 - Indicates whether null bytes are discarded. If this member is TRUE, 
+            null bytes are discarded when received.
+            
+            fRtsControl:2 - RTS (request-to-send) flow control. This member can be one of the 
+            following values.
+            	RTS_CONTROL_DISABLE		Disables the RTS line when the device is opened and 
+            							leaves it disabled. 
+            	RTS_CONTROL_ENABLE		Enables the RTS line when the device is opened and 
+            							leaves it on. 
+            	RTS_CONTROL_HANDSHAKE	Enables RTS handshaking. The driver raises the RTS line
+            							when the "type-ahead" (input) buffer is less than 1/2 
+            							full and lowers the RTS line when the buffer is more than
+            							three-quarters full. If handshaking is enabled, it is 
+            							an error for the application to adjust the line by using
+            							the EscapeCommFunction function.
+            	RTS_CONTROL_TOGGLE		Windows NT/2000/XP: Specifies that the RTS line will be
+            							high if bytes are available for transmission. After all
+            							buffered bytes have been sent, the RTS line will be low. 
+            
+            fAbortOnError:1 - Indicates whether read and write operations are terminated if an 
+            error occurs. If this member is TRUE, the driver terminates all read and write 
+            operations with an error status if an error occurs. The driver will not accept 
+            any further communications operations until the application has acknowledged the 
+            error by calling the ClearCommError function.
+            
+            fDummy2:17 - Reserved; do not use. 
+            internal Int32	bitfield;
+            
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.wReserved">
+            <summary>
+            Reserved; must be zero.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.xonLim">
+            <summary>
+            Minimum number of bytes allowed in the input buffer before flow control 
+            is activated to inhibit the sender. Note that the sender may transmit 
+            characters after the flow control signal has been activated, so this value 
+            should never be zero. This assumes that either XON/XOFF, RTS, or DTR input 
+            flow control is specified in fInX, fRtsControl, or fDtrControl.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.xoffLim">
+            <summary>
+            Maximum number of bytes allowed in the input buffer before flow control 
+            is activated to allow transmission by the sender. This assumes that either 
+            XON/XOFF, RTS, or DTR input flow control is specified in fInX, fRtsControl, 
+            or fDtrControl. The maximum number of bytes allowed is calculated by 
+            subtracting this value from the size, in bytes, of the input buffer.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.byteSize">
+            <summary>
+            Number of bits in the bytes transmitted and received. 
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.prtyByte">
+            <summary>
+            Parity scheme to be used. This member can be one of the following values.
+            Even, Mark, None, Odd, Space 
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.stopBits">
+            <summary>
+            Number of stop bits to be used. This member can be 1, 1.5, or 2 stop bits.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.xonChar">
+            <summary>
+            Value of the XON character for both transmission and reception. 
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.xoffChar">
+            <summary>
+            Value of the XOFF character for both transmission and reception. 
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.errorChar">
+            <summary>
+            Value of the character used to replace bytes received with a parity error.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.eofChar">
+            <summary>
+            Value of the character used to signal the end of data.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.evtChar">
+            <summary>
+            Value of the character used to signal an event.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ComPort.DCB.wReserved1">
+            <summary>
+            Reserved; do not use.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ComPort.COMMTIMEOUTS">
+            <summary>
+            The COMMTIMEOUTS structure is used in the SetCommTimeouts and GetCommTimeouts 
+            functions to set and query the time-out parameters for a communications device. 
+            The parameters determine the behavior of ReadFile, WriteFile, ReadFileEx, and 
+            WriteFileEx operations on the device.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.SocketStream">
+            <summary>
+            Summary description for SocketStream.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.SocketStream.#ctor(System.Net.Sockets.Socket@,System.Int32,System.Int32)">
+            <summary>
+            The socket stream class.
+            </summary>
+            <param name="i_socket">The socket object.</param>
+            <param name="i_iSendTimeout"></param>
+            <param name="i_iRecvTimeout"></param>
+        </member>
+        <member name="M:Advantech.Common.SocketStream.SendUDP(System.Net.EndPoint@,System.Byte[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i_remoteEP"></param>
+            <param name="i_byData"></param>
+            <param name="i_iLen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.SocketStream.RecvUDP(System.Net.EndPoint@,System.Byte[],System.Int32@)">
+            <summary>
+            To receive UDP datagram.
+            </summary>
+            <param name="o_remoteEP"></param>
+            <param name="i_byData">The data buffer for storing data.</param>
+            <param name="o_iLen">The length of data received.</param>
+            <returns>Return true if data received, otherwise return false.</returns>
+        </member>
+        <member name="M:Advantech.Common.SocketStream.DataArrive(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i_iWaitMilliSecond"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Advantech.Common.UDPSocketClient">
+            <summary>
+            Summary description for UDPClient.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketClient.#ctor">
+            <summary>
+            The UDP client class.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketClient.Create">
+            <summary>
+            Create the UDP client.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketClient.Terminate">
+            <summary>
+            Terminate the UDP client.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketClient.ClientSocket">
+            <summary>
+            The UDP client socket.
+            </summary>
+            <returns>The socket object.</returns>
+        </member>
+        <member name="P:Advantech.Common.UDPSocketClient.SendTimeout">
+            <summary>
+            Send timeout.
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.UDPSocketClient.ReceiveTimeout">
+            <summary>
+            Receive timeout.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ErrorCode">
+            <summary>
+            The Advantech error code
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.No_Error">
+            <summary>
+            No error
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.ComPort_Error">
+            <summary>
+            ComPort error
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.ComPort_Open_Fail">
+            <summary>
+            ComPort open fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.ComPort_Send_Fail">
+            <summary>
+            ComPort send fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.ComPort_Recv_Fail">
+            <summary>
+            ComPort receive fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Null">
+            <summary>
+            Socket is null
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Connect_Fail">
+            <summary>
+            Socket connect fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Invalid_IP">
+            <summary>
+            Invalid IP
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Send_Fail">
+            <summary>
+            Socket send fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Recv_Fail">
+            <summary>
+            Socket send fail
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Socket_Unknown">
+            <summary>
+            The error cannnot be identified
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Head">
+            <summary>
+            Adam protocol response header is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_End">
+            <summary>
+            Adam protocol response header is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Length">
+            <summary>
+            Adam protocol response length is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Data">
+            <summary>
+            Adam protocol response data is invalid, which causes the convertion failed
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Checksum">
+            <summary>
+            Adam protocol response checksum is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Param">
+            <summary>
+            The parameter is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Invalid_Password">
+            <summary>
+            The password is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Invalid_CRC">
+            <summary>
+            Received modbus packet CRC is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Invalid_Length">
+            <summary>
+            Received modbus packet length is invalid
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Invalid_Serial">
+            <summary>
+            Serial number of received modbus packet is different from the sent one
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception">
+            <summary>
+            The modbus response with exception, this is the base
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_IllegalFunction">
+            <summary>
+            The modbus response with exception 01
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_IllegalDataAddress">
+            <summary>
+            The modbus response with exception 02
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_IllegalDataValue">
+            <summary>
+            The modbus response with exception 03
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_SlaveDeviceFailure">
+            <summary>
+            The modbus response with exception 04
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_Acknowledge">
+            <summary>
+            The modbus response with exception 05
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_SlaveDeviceBusy">
+            <summary>
+            The modbus response with exception 06
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_NativeAcknowledge">
+            <summary>
+            The modbus response with exception 07
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Modbus_Exception_MemoryParityError">
+            <summary>
+            The modbus response with exception 08
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Command_Nack">
+            <summary>
+            Command returning nack
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Command_Unknown">
+            <summary>
+            Command returning unknown or invalid expected data
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.API_Parameter_Error">
+            <summary>
+            Parameter error
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ErrorCode.Adam_Null_Error">
+            <summary>
+            Internal Null detected
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Tool">
+            <summary>
+            Some tool functions for translating or calculating.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Tool.m_CRCHi">
+            <summary>
+            Table of CRC values for high-order byte
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.Tool.m_CRCLo">
+            <summary>
+            Table of CRC values for low-order byte
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.Tool.#cctor">
+            <summary>
+            Static Tool class
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.Tool.CRC16(System.Byte[],System.Int32,System.Byte[]@)">
+            <summary>
+            Calculate the CRC16
+            </summary>
+            <param name="i_byData">The data for calculating CRC</param>
+            <param name="i_iLen">The data length</param>
+            <param name="o_byCRC16">The two bytes CRC16 data</param>
+        </member>
+        <member name="M:Advantech.Common.Tool.ValidateCRC(System.Byte[]@,System.Int32@)">
+            <summary>
+            Validate the CRC, and remove the CRC data if CRC is valid
+            </summary>
+            <param name="i_byData">The data for validating CRC</param>
+            <param name="i_iLen">The data length</param>
+            <returns>true if CRC is valid, otherwise false</returns>
+        </member>
+        <member name="M:Advantech.Common.Tool.HexStringToRTUArray(System.String,System.Byte[]@)">
+            <summary>
+            Convert a HEX string to a RTU array
+            </summary>
+            <param name="i_szHex">The HEX string.</param>
+            <param name="o_byRTU">The RTU array.</param>
+        </member>
+        <member name="M:Advantech.Common.Tool.RTUArrayToHexString(System.Byte[],System.String@)">
+            <summary>
+            Convert a RTU array to a HEX string
+            </summary>
+            <param name="i_byRTU">The RTU array.</param>
+            <param name="o_szHex">The HEX string.</param>
+        </member>
+        <member name="M:Advantech.Common.Tool.FourByteHexStringToInteger(System.String,System.Int32@)">
+            <summary>
+            Convert 4 bytes HEX string to integer
+            </summary>
+            <param name="i_szHex">The HEX string, length MUST equal 4 bytes.</param>
+            <param name="o_outputValue">Output integer.</param>
+            <returns>true if success, otherwise false</returns>
+        </member>
+        <member name="T:Advantech.Common.ModbusServerAPI">
+            <summary>
+            Summary description for ModbusServerAPI.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_READCOILSTATUS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_READINPUTSTATUS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_READHOLDREG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_READINPUTREG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_FORCESINGLECOIL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_PRESETSINGLEREG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_FORCEMULTICOIL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODBUS_PRESETMULTIREGS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_SUCCESS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_BASE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODEXCEPT_BASE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_WSASTART_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_WSACLEAN_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_CREATESOCK_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_CREATESVR_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_PARAMETER_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_WAIT_TIMEOUT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_CONNECT_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_CLOSESOCKET_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MEMALLOC_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_CREATECLN_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_TCPCLIENT_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_TCPSEND_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_TCPRECV_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_SOCKET_CLOSED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_THREAD_RUNNING">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_THREAD_STOP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_THREAD_BUSY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_RTUCLIENT_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_RTUCOM_INUSED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_RTUCRC_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_SETPRIO_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_01">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_02">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_03">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_04">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_05">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_06">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_07">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_08">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ModbusServerAPI.MODERR_MODEXCEPT_99">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.#ctor">
+            <summary>
+            Summary description for ModbusServerAPI.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_Initialize">
+            <summary>
+            Initialize the MODBUS library resource.
+            </summary>
+            <returns>
+            MODERR_SUCCESS initialized MODBUS library succeeded.
+            MODERR_WSASTART_FAILED failed to initialize resource
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_Terminate">
+            <summary>
+            Terminate the MODBUS library and release resource.
+            Before calling this function, all MODBUS clients and servers have to be stopped.
+            </summary>
+            <returns>
+            MODERR_SUCCESS terminated MODBUS library succeeded.
+            MODERR_WSACLEAN_FAILED failed to terminate resource
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetVersion">
+            <summary>
+            Get the version number of the MODBUS library.
+            </summary>
+            <returns>The version number. In hex decimal format, for example 0x0101, it means the version is 1.01.</returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_StartTcpServer">
+            <summary>
+            Start the MODBUS/TCP server.
+            </summary>
+            <returns>
+            MODERR_SUCCESS, started MODBUS/TCP server succeeded.
+            MODERR_THREAD_RUNNING, the server is already started.
+            MODERR_CREATESVR_FAILED, failed to start MODBUS/TCP server. Normally, this caused by the server port (502) has been used.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_StopTcpServer">
+            <summary>
+            Stop the MODBUS/TCP server.
+            </summary>
+            <returns>MODERR_SUCCESS, stopped MODBUS-TCP server succeeded.</returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerPriority(System.Int32)">
+            <summary>
+            Set the priority of the MODBUS/TCP server running thread.
+            Before calling this function, the MODBUS/TCP server has to be successfully started.
+            </summary>
+            <param name="i_iPriority">Specifies the priority value for the server thread.</param>
+            <returns>
+            MODERR_SUCCESS, set MODBUS-TCP server thread priority succeeded.
+            MODERR_SETPRIO_FAILED, failed to set the thread priority.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerClientIpRestrict(System.Boolean)">
+            <summary>
+            Enable/disable the restriction of remote client connection.
+            If this function sets the restriction to true, then only those
+            clients set by MOD_SetTcpServerClientIp will be acceptable by the server.
+            </summary>
+            <param name="i_bRestrict">The Boolean value indicates whether the IP restriction is applied.</param>
+            <returns>MODERR_SUCCESS, set the restriction succeeded.</returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetTcpServerClientIp(System.Int32,System.String)">
+            <summary>Get the acceptable client IP address with indicated index.</summary>
+            <param name="i_iIndex">The index of the acceptable client. This value is ranged from 0 to 7.</param>
+            <param name="o_szIp">The IP address of the client in the indicated index.</param>
+            <returns>
+            MODERR_SUCCESS, get the client IP succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iIndex is out of range.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerClientIp(System.Int32,System.String)">
+            <summary>Set the acceptable client IP address with indicated index.</summary>
+            <param name="i_iIndex">The index of the acceptable client. This value is ranged from 0 to 7.</param>
+            <param name="i_szIp">The IP address of the client.</param>
+            <returns>
+            MODERR_SUCCESS, set the client IP succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iIndex is out of range or the IP is invalid.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetTcpServerClientIdle(System.Int32@)">
+            <summary>Get the client transaction idle timeout.</summary>
+            <param name="o_iIdleSec">The transaction idle timeout.</param>
+            <returns>
+            MODERR_SUCCESS, get the transaction idle timeout succeeded.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerClientIdle(System.Int32)">
+            <summary>
+            Set the client transaction idle timeout.
+            If a connected client has been idled for the setting time,
+            the server will disconnect the client from the server.
+            The default value is 30 seconds.
+            </summary>
+            <param name="i_iIdleSec">The transaction idle timeout. The value is ranged from 5 to 600 (seconds).</param>
+            <returns>
+            MODERR_SUCCESS, set the transaction idle timeout succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iIdleSec is out of range.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_StartRtuServer(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Start the MODBUS/RTU server.
+            </summary>
+            <param name="i_iServerIndex">The server index. This library supports two MODBUS/RTU servers can be created at a single process. The range of this value is from 0 to 1.</param>
+            <param name="i_iComIndex">The index of the COM port. The range of this value is from 1 to 255.</param>
+            <param name="i_bySlaveAddr">The slave address of the server. The range of this value is from 1 to 247.</param>
+            <returns>
+            MODERR_SUCCESS, started MODBUS/RTU server succeeded.
+            MODERR_THREAD_RUNNING, the server is already started.
+            MODERR_CREATESVR_FAILED, failed to start MODBUS/RTU server. Normally, this caused by the COM port has been used.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_StopRtuServer(System.Int32)">
+            <summary>
+            Stop the MODBUS/RTU server.
+            </summary>
+            <param name="i_iServerIndex">The server index. The range of this value is from 0 to 1.</param>
+            <returns>
+            MODERR_SUCCESS, stopped MODBUS/RTU server succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iServerIndex is out of range.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetRtuServerPriority(System.Int32,System.Int32)">
+            <summary>
+            Set the priority of the MODBUS/RTU server running thread.
+            Before calling this function, the MODBUS/RTU server has to be successfully started.
+            </summary>
+            <param name="i_iServerIndex">The server index. The range of this value is from 0 to 1.</param>
+            <param name="i_iPriority">Specifies the priority value for the server thread.</param>
+            <returns>
+            MODERR_SUCCESS, set MODBUS/RTU server thread priority succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iServerIndex is out of range.
+            MODERR_SETPRIO_FAILED, failed to set the thread priority.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetRtuServerComm(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set the MODBUS/RTU server communication parameters.
+            </summary>
+            <param name="i_iServerIndex">The server index. The range of this value is from 0 to 1.</param>
+            <param name="i_lBaudrate">Specifies the baud rate at which the MODBUS/RTU server operates.</param>
+            <param name="i_iDataBits">Specifies the number of bits in the bytes transmitted and received. The range of this value is from 5 to 8.</param>
+            <param name="i_iParity">Specifies the parity scheme to be used.</param>
+            <param name="i_iStop">Specifies the number of stop bits to be used.</param>
+            <returns>MODERR_SUCCESS, set the restriction succeeded.</returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetRtuServerTimeout(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set the timeout parameters for all read and write operations on the MODBUS/RTU server.
+            </summary>
+            <param name="i_iServerIndex">The server index. The range of this value is from 0 to 1.</param>
+            <param name="i_iReadIntervalTimeout">
+            This parameter sets the Specifies the maximum acceptable time, in milliseconds, 
+            to elapse between the arrival of two characters on the communication line.
+            </param>
+            <param name="i_iReadTotalTimeoutConstant">Specifies the constant, in milliseconds, used to calculate the total timeout period for read operations.</param>
+            <param name="i_iReadTotalTimeoutMultiplier">Specifies the multiplier, in milliseconds, used to calculate the total timeout period for read operations.</param>
+            <param name="i_iWriteTotalTimeoutConstant">Specifies the constant, in milliseconds, used to calculate the total timeout period for write operations.</param>
+            <param name="i_iWriteTotalTimeoutMultiplier">Specifies the multiplier, in milliseconds, used to calculate the total timeout period for write operations.</param>
+            <returns>
+            MODERR_SUCCESS, set the timeout parameters succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_iServerIndex is out of range.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetServerCoil(System.Int32,System.Int32,System.Char[],System.Int32@)">
+            <summary>
+            Get the coil status data (0x references) of the MODBUS server.
+            In a process, the library has a single copy of coil status data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the coil status data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the coil status data to be read. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">The buffer pointer where to store the read coil status data.</param>
+            <param name="o_iRetLen">The length of the returned coil status data in bytes.</param>
+            <returns>
+            MODERR_SUCCESS, get the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the o_byBuf is NULL
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetServerInput(System.Int32,System.Int32,System.Char[],System.Int32@)">
+            <summary>
+            Get the input status data (1x references) of the MODBUS server.
+            In a process, the library has a single copy of input status data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the input status data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the input status data to be read. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">The buffer pointer where to store the read input status data.</param>
+            <param name="o_iRetLen">The length of the returned input status data in bytes.</param>
+            <returns>
+            MODERR_SUCCESS, get the input status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the o_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetServerInputReg(System.Int32,System.Int32,System.Char[],System.Int32@)">
+            <summary>
+            Get the input register data (3x references) of the MODBUS server.
+            In a process, the library has a single copy of input register data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the input register data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the input register data to be read. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">The buffer pointer where to store the read input register data.</param>
+            <param name="o_iRetLen">The length of the returned input register data in bytes.</param>
+            <returns>
+            MODERR_SUCCESS, get the input register data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the o_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_GetServerHoldReg(System.Int32,System.Int32,System.Char[],System.Int32@)">
+            <summary>
+            Get the holding register data (4x references) of the MODBUS server.
+            In a process, the library has a single copy of holding register data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the holding register data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the holding register data to be read. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">The buffer pointer where to store the read holding register data.</param>
+            <param name="o_iRetLen">The length of the returned holding register data in bytes.</param>
+            <returns>
+            MODERR_SUCCESS, get the holding register data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the o_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerCoil(System.Int32,System.Int32,System.Char[])">
+            <summary>
+            Set the coil status data (0x references) of the MODBUS server.
+            In a process, the library has a single copy of coil status data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the coil status data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the coil status data to be set. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">
+            The buffer pointer where to hold the coil status data to be set.
+            For example, if the i_iLen is 40, then the length of this buffer must be 5 bytes long.
+            </param>
+            <returns>
+            MODERR_SUCCESS, set the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the i_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerInput(System.Int32,System.Int32,System.Char[])">
+            <summary>
+            Set the input status data (1x references) of the MODBUS server.
+            In a process, the library has a single copy of input status data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the input status data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the input status data to be set. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">
+            The buffer pointer where to hold the input status data to be set.
+            For example, if the i_iLen is 40, then the length of this buffer must be 5 bytes long.
+            </param>
+            <returns>
+            MODERR_SUCCESS, set the input status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the i_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerInputReg(System.Int32,System.Int32,System.Char[])">
+            <summary>
+            Set the input register data (3x references) of the MODBUS server.
+            In a process, the library has a single copy of input register data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the input register data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the input register data to be set. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">
+            The buffer pointer where to hold the input register data to be set.
+            For example, if the i_iLen is 40, then the length of this buffer must be 80 bytes long. (each register is 2 bytes long)
+            The order of the bytes is as follow: [Reg-0 High byte], [Reg-0 Low byte], [Reg-1 High byte], [Reg-1 Low byte]…
+            </param>
+            <returns>
+            MODERR_SUCCESS, set the input register data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the i_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerHoldReg(System.Int32,System.Int32,System.Char[])">
+            <summary>
+            Set the holding register data (4x references) of the MODBUS server.
+            In a process, the library has a single copy of holding register data that can be shared among threads.
+            </summary>
+            <param name="i_iStart">The start index of the holding register data. The range of this value is from 1 to 65535.</param>
+            <param name="i_iLen">
+            The length of the holding register data to be set. The range of this value is from 1 to 65536.
+            The sum of i_iStart and i_iLen must be less than or equal to 65536.
+            </param>
+            <param name="o_byBuf">
+            The buffer pointer where to hold the holding register data to be set.
+            For example, if the i_iLen is 40, then the length of this buffer must be 80 bytes long. (each register is 2 bytes long)
+            The order of the bytes is as follow: [Reg-0 High byte], [Reg-0 Low byte], [Reg-1 High byte], [Reg-1 Low byte]…
+            </param>
+            <returns>
+            MODERR_SUCCESS, set the holding register data succeeded.
+            MODERR_PARAMETER_INVALID, indicates some of the parameters are out of range or the i_byBuf is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerCoilChangedEventHandler(Advantech.Common.ModbusServerAPI.EventHandler_OnCoilChangedEvent)">
+            <summary>
+            Set the coil status data changed event handler of the MODBUS server.
+            Any clients try to write the coil status data to the server will cause the call back function to be called.
+            </summary>
+            <param name="i_evtHandle">The handler of the call back function.</param>
+            <returns>
+            MODERR_SUCCESS, get the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_evtHandle is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetServerHoldRegChangedEventHandler(Advantech.Common.ModbusServerAPI.EventHandler_OnHoldRegChangedEvent)">
+            <summary>
+            Set the holding register data changed event handler of the MODBUS server.
+            Any clients try to write the holding register data to the server will cause the call back function to be called.
+            </summary>
+            <param name="i_evtHandle">The handler of the call back function.</param>
+            <returns>
+            MODERR_SUCCESS, get the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_evtHandle is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerClientConnectEventHandler(Advantech.Common.ModbusServerAPI.EventHandler_OnRemoteTcpClientConnectEvent)">
+            <summary>
+            Set the MODBUS/TCP client connect to the server event handler.
+            Any clients connect to the server will cause the call back function to be called.
+            </summary>
+            <param name="i_evtHandle">The handler of the call back function.</param>
+            <returns>
+            MODERR_SUCCESS, get the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_evtHandle is NULL.
+            </returns>
+        </member>
+        <member name="M:Advantech.Common.ModbusServerAPI.MOD_SetTcpServerClientDisconnectEventHandler(Advantech.Common.ModbusServerAPI.EventHandler_OnRemoteTcpClientDisconnectEvent)">
+            <summary>
+            Set the MODBUS/TCP client disconnect from the server event handler.
+            Any clients disconnect from the server will cause the call back function to be called.
+            </summary>
+            <param name="i_evtHandle">The handler of the call back function.</param>
+            <returns>
+            MODERR_SUCCESS, get the coil status data succeeded.
+            MODERR_PARAMETER_INVALID, indicates the i_evtHandle is NULL.
+            </returns>
+        </member>
+        <member name="T:Advantech.Common.ModbusServerAPI.EventHandler_OnCoilChangedEvent">
+            <summary>
+            The prototype of call back function when the coil changed event occurred.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ModbusServerAPI.EventHandler_OnHoldRegChangedEvent">
+            <summary>
+            The prototype of the call back function when the holding register changed event occurred.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ModbusServerAPI.EventHandler_OnRemoteTcpClientConnectEvent">
+            <summary>
+            The prototype of the call back function when a remote client connects to the server event occurred.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ModbusServerAPI.EventHandler_OnRemoteTcpClientDisconnectEvent">
+            <summary>
+            The prototype of the call back function when a remote client disconnects from the server event occurred.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.UDPSocketServer">
+            <summary>
+            Summary description for UDPServer.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketServer.#ctor">
+            <summary>
+            The UDP server class.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketServer.Create(System.Int32)">
+            <summary>
+            Create the UDP server.
+            </summary>
+            <param name="i_iPort">The port to listen.</param>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketServer.Terminate">
+            <summary>
+            Terminate the UDP server.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.UDPSocketServer.ServerSocket">
+            <summary>
+            The UDP server socket.
+            </summary>
+            <returns>The socket object.</returns>
+        </member>
+        <member name="P:Advantech.Common.UDPSocketServer.SendTimeout">
+            <summary>
+            Send timeout.
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.UDPSocketServer.ReceiveTimeout">
+            <summary>
+            Receive timeout.
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.ICMP_ECHO_REPLY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ICMP_ECHO_REPLY.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="F:Advantech.Common.ICMP_ECHO_REPLY.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY._Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Address">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.RoundTripTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.DataSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Ttl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Tos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.Flags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.OptionsSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Advantech.Common.ICMP_ECHO_REPLY.OptionsData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Advantech.Common.Ping">
+            <summary>
+            Summary description for Ping.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.Ping.LocalAlloc(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="flags"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.Ping.LocalFree(System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="pMem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.Ping.IcmpCreateFile">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.Ping.IcmpCloseHandle(System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="h"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.Ping.IcmpSendEcho(System.IntPtr,System.UInt32,System.Byte[],System.Int16,System.IntPtr,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="IcmpHandle"></param>
+            <param name="DestinationAddress"></param>
+            <param name="RequestData"></param>
+            <param name="RequestSize"></param>
+            <param name="RequestOptions"></param>
+            <param name="ReplyBuffer"></param>
+            <param name="ReplySize"></param>
+            <param name="Timeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advantech.Common.Ping.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.Ping.Initialize(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i_iTimeout"></param>
+        </member>
+        <member name="M:Advantech.Common.Ping.PingIP(System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="i_szIPAddr"></param>
+            <param name="o_szMessage"></param>
+        </member>
+        <member name="M:Advantech.Common.Ping.Terminate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.Ping.LastError">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Advantech.Common.ApaxAPI">
+            <summary>
+            Summary description for ApaxAPI.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_ApiException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_SUCCESS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.DevErrorCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_MALLOC_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_MAPADDR_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_HANDLE_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_MODULE_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_SLOT_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_CHANNEL_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_FUNC_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_INTRINIT_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_FREQMEASU_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_PARAM_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_FIFO_NOTREADY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_FIFO_FULL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_FIFO_DATAFAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_ACQSTOP_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_DEVICE_NON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_ACCESS_DENIED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_LENGTH_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_CONFIG_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_DSPFLAG_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_INTERNAL_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_TIMEOUT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.ApaxAPI.ERR_COMMAND_FAILED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.#ctor">
+            <summary>
+            Summary description for ApaxAPI.
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.ADAMDrvOpen(System.Int32@)">
+            <summary>
+            Adam Controller driver open.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.ADAMDrvClose(System.Int32@)">
+            <summary>
+            Adam controller driver close.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetActMsgPeriod(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set ack message period. (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwPeriod">The ack message period.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.OUT_FlushBufValues(System.Int32,System.UInt32)">
+            <summary>
+            Set the slot buffer mask flags.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwSlotMask">The slot buffer mask flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.OUT_SetSaftyEnable(System.Int32,System.UInt16,System.Boolean)">
+            <summary>
+            Set safety enable flag.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_wSlot">The slot number, based 0.</param>
+            <param name="i_bEnable">The safety enable flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.OUT_GetSaftyEnable(System.Int32,System.UInt16,System.Boolean@)">
+            <summary>
+            Get safety enable flag.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_wSlot">The slot number, based 0.</param>
+            <param name="i_bEnable">The safety enable flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetModuleID(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get the module ID.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwModuleID">The module ID number plugged in the slot.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetModuleID_EX(System.Int32,System.UInt16,System.UInt32@,System.Int32@)">
+            <summary>
+            Get the module ID.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwModuleID">The module ID number plugged in the slot.</param>
+            <param name="o_usOrder">The module order.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetSlotInfo(System.Int32,System.UInt16,System.Byte[])">
+            <summary>
+            Get slot information.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_stSlotInfo"></param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetRawData(System.Int32,System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Get the raw data of DPM.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwStart">The start address of DPM</param>
+            <param name="i_dwLength">The data length</param>
+            <param name="o_dwRawData">The raw data of DPM</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetDownloadMode(System.Int32,System.UInt16)">
+            <summary>
+            Set download mode. (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetLocateModule(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Set module locate function.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wTimes">The LED flash times, 0 for stop, 255 for continuous.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetDownloadStart(System.Int32,System.UInt16)">
+            <summary>
+            Set download start flag. (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetDownloadPacket(System.Int32,System.UInt16,System.UInt16,System.UInt16,System.Byte[])">
+            <summary>
+            Set download data packet. (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wSequence">The sequence number of the packet.</param>
+            <param name="i_wDataLen">The data length of the packet.</param>
+            <param name="i_byData">The data of the packet.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetAllSlotErrorFlag(System.Int32,System.UInt32@)">
+            <summary>
+            Get all slot error flags.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_wError">Slot error flags.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetInnerTimeout(System.Int32,System.UInt16)">
+            <summary>
+            Set the inner timeout.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_wTimeout">The inner timeout.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetDspChannelFlag(System.Int32,System.UInt16)">
+            <summary>
+            Set dsp channel flag.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_wFlag">The set dsp channel flag. (Turn on:0x55aa ; turn off:others)</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetDspChannelFlag(System.Int32,System.UInt16@)">
+            <summary>
+            Get dsp channel flag.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_wFlag">The set dsp channel flag. (Turn on:0x55aa ; turn off:others)</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetFpgaVersion(System.Int32,System.UInt32@)">
+            <summary>
+            Get FPGA version.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_dwVer">The set dsp channel flag. (Turn on:0x55aa ; turn off:others)</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetCommLock(System.Int32,System.UInt16)">
+            <summary>
+            Internal used. DO NOT call this function in your program.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_wLock">The lock status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetCmdWriteRead(System.Int32,System.UInt16,System.UInt16,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Internal used. DO NOT call this function in your program.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wMsgType">The message type.</param>
+            <param name="i_dwPara1">The parameter 1.</param>
+            <param name="i_dwPara2">The parameter 2.</param>
+            <param name="i_dwPara3">The parameter 3.</param>
+            <param name="i_dwPara4">The parameter 4.</param>
+            <param name="i_dwPara5">The parameter 5.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.TOOL_SetCmdWrite5Read10(System.Int32,System.UInt16,System.UInt16,System.UInt32[],System.UInt32[])">
+            <summary>
+            Internal used. DO NOT call this function in your program.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wMsgType">The message type.</param>
+            <param name="i_dwParam0To4">The parameter input.</param>
+            <param name="o_dwParam0To9">The parameter output.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.TOOL_SetCmdWriteReadRet(System.Int32,System.UInt16,System.UInt16,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Internal used. DO NOT call this function in your program.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wMsgType">The message type.</param>
+            <param name="i_dwParam0">The 1st parameter input.</param>
+            <param name="i_dwParam1">The 2nd parameter input.</param>
+            <param name="i_dwParam2">The 3rd parameter input.</param>
+            <param name="i_dwParam3">The 4th parameter input.</param>
+            <param name="i_dwParam4">The 5th parameter input.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetVersion(System.Int32,System.UInt32@)">
+            <summary>
+            Get the driver version.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_dwVersion">The driver version.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetHeartbeatRun(System.Int32,System.Boolean)">
+            <summary>
+            Backup System: Set the heartbeat run mode.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_bRun">The heartbeat run mode.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetHeartbeatRun(System.Int32,System.Boolean@)">
+            <summary>
+            Backup System: Get the heartbeat run mode.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_bRun">The heartbeat run mode.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetAppAHeartbeat(System.Int32)">
+            <summary>
+            Backup System: Set the application A heartbeat.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetAppAStatus(System.Int32,System.Boolean@)">
+            <summary>
+            Backup System: Get the application A status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_bAlive">The application A status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetAppBHeartbeat(System.Int32)">
+            <summary>
+            Backup System: Set the application B heartbeat.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetAppBStatus(System.Int32,System.Boolean@)">
+            <summary>
+            Backup System: Get the application B status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_bAlive">The application B status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetGlobalHeartbeat(System.Int32)">
+            <summary>
+            Backup System: Set the global heartbeat.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetGlobalStatus(System.Int32,System.UInt16@)">
+            <summary>
+            Backup System: Get the global status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_wStatus">The global status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetGlobalMachineID(System.Int32,System.UInt16@)">
+            <summary>
+            Backup System: Get the global machine ID.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_wID">The global machine ID.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetGlobalActive(System.Int32,System.UInt16@)">
+            <summary>
+            Backup System: Get the global active.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_wActive">The global active.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DIO_GetValue(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get DIO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_bValue">The DIO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DIO_GetValues(System.Int32,System.UInt16,System.UInt32@,System.UInt32@)">
+            <summary>
+            Get DIO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwHighValue">The DIO high DWORD value.</param>
+            <param name="o_dwLowValue">The DIO low DWORD value.</param> 
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DIO_GetSaftyValues(System.Int32,System.UInt16,System.UInt32@,System.UInt32@)">
+            <summary>
+            Get DIO safety setting values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwHighValue">The DIO high DWORD safety setting value.</param>
+            <param name="o_dwLowValue">The DIO low DWORD safety setting value.</param> 
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DO_SetValue(System.Int32,System.UInt16,System.UInt16,System.Boolean)">
+            <summary>
+            Set DO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_bValue">The DO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DO_SetValues(System.Int32,System.UInt16,System.UInt32,System.UInt32)">
+            <summary>
+            Set DO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwHighValue">The DO high DWORD values.</param>
+            <param name="i_dwLowValue">The DO low DWORD values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DIO_SetSaftyValues(System.Int32,System.UInt16,System.UInt32,System.UInt32)">
+            <summary>
+            Set DIO safety setting values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwHighValue">The DIO high DWORD safety setting values.</param>
+            <param name="i_dwLowValue">The DIO low DWORD safety setting values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DO_BufValues(System.Int32,System.UInt16,System.UInt32,System.UInt32)">
+            <summary>
+            Set DO buffer values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwHighValue">The DO high DWORD buffer values.</param>
+            <param name="i_dwLowValue">The DO low DWORD buffer values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DI_SetFilters(System.Int32,System.UInt16,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Set the DI filter parameters.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwHighMask">Channel high DWORD mask.</param>
+            <param name="i_dwLowMask">Channel low DWORD mask.</param>
+            <param name="i_dwValue">The DI filter parameters.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.DI_GetFilters(System.Int32,System.UInt16,System.UInt32@,System.UInt32@,System.UInt32@)">
+            <summary>
+            Get the DI filter parameters.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwHighMask">Channel high DWORD mask.</param>
+            <param name="o_dwLowMask">Channel low DWORD mask.</param>
+            <param name="o_dwValue">The DI filter parameters.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_GetValue(System.Int32,System.UInt16,System.UInt16,System.UInt16@)">
+            <summary>
+            Get AIO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_wValue">The AIO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_GetValues(System.Int32,System.UInt16,System.UInt16[])">
+            <summary>
+            Get AIO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_wValues">The AIO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_GetSaftyValues(System.Int32,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>
+            Get AO safety setting values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="o_wValues">The AIO safety setting values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_GetChannelStatus(System.Int32,System.UInt16,System.Byte[])">
+            <summary>
+            Get AIO channel status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_byValues">The AIO channel status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_SetValue(System.Int32,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            Set AO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_wValue">The AO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_SetSaftyValues(System.Int32,System.UInt16,System.UInt32,System.UInt16[])">
+            <summary>
+            Set the AO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">Channel mask.</param>
+            <param name="i_wValues">The AO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_BufValues(System.Int32,System.UInt16,System.UInt32,System.UInt16[])">
+            <summary>
+            Set the AO buffer values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">Channel mask.</param>
+            <param name="i_wValues">The AO buffer values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_SetRanges(System.Int32,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>
+            Set AIO ranges.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="i_wRanges">The AIO ranges.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetChannelMask(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI channel mask.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetIntegrationTime(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI integration time.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwIntegration">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_GetStartupValues(System.Int32,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>
+            Get AO startup value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="o_wValues">The AO startup values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_SetStartupValues(System.Int32,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>
+            Set AO startup value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="i_wValues">The AO startup values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AO_SetCalibrationMode(System.Int32,System.UInt16)">
+            <summary>
+            Set AO calibration mode.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetAutoCalibration(System.Int32,System.UInt16)">
+            <summary>
+            Set AI auto-calibration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_SetZeroCalibration(System.Int32,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            Set AIO zero calibration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannel">The channel ID which is ranged from 0 to 31.</param>
+            <param name="i_wType">The type value to be set. Currently, it is ingnored.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AIO_SetSpanCalibration(System.Int32,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            Set AIO span calibration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannel">The channel ID which is ranged from 0 to 31.</param>
+            <param name="i_wType">The type value to be set. Currently, it is ignored.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetChValOffset(System.Int32,System.UInt16,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI channel value offset.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannel">The channel ID which is ranged from 0 to 31.</param>
+            <param name="i_dwVal">The channel value offset.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetBurnoutFunEnable(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI Burnout Function.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwEnableMask">The channel burnout function enable mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetCjcInitValRecord(System.Int32,System.UInt16)">
+            <summary>
+            Set AI CJC Initial Value Record.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetThermoCalibration(System.Int32,System.UInt16)">
+            <summary>
+            Set AI Thermal Couple Calibration Procedure.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetBurnoutValue(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI Burnout Function Value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwValue">The channel burnout function enable mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_GetChValOffset(System.Int32,System.UInt16,System.UInt16,System.UInt32@)">
+            <summary>
+            Get AI channel value offset.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannel">The channel ID which is ranged from 0 to 31.</param>
+            <param name="o_dwVal">The channel value offset.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_GetCjcValue(System.Int32,System.UInt16,System.UInt32@,System.Byte@)">
+            <summary>
+            Get AI CJC value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwVal">The CJC value.</param>
+            <param name="o_byStatus">The CJC status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_GetBurnoutFunEnable(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get AI Burnout Function Enable Status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwEnableMask">The Burnout Enable Status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_GetBurnoutValue(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get AI Burnout Function Value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwVal">The Burnout Function Value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_GetSampleRate(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get AI sample rate.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwRate">The AI sample rate.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.AI_SetSampleRate(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set AI sample rate.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwRate">The AI sample rate.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetValue(System.Int32,System.UInt16,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_dwValue">The Counter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetValues(System.Int32,System.UInt16,System.UInt32[])">
+            <summary>
+            Get Counter values
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwValues">The Counter values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_ClearValues(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Clear counter value. Reset to startup value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetRanges(System.Int32,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>
+            Set counter ranges.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="i_wRanges">The Counter ranges.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetChannelMask(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get counter channel mask (Start or stop state).
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwMask">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetChannelMask(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set counter channel mask (Start or stop state).
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetFilter(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get counter filter.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetFilter(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set counter filter.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetStartupValues(System.Int32,System.UInt16,System.UInt16,System.UInt32[])">
+            <summary>
+            Get counter startup values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="o_wValues">The counter startup values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetStartupValues(System.Int32,System.UInt16,System.UInt16,System.UInt32[])">
+            <summary>
+            Set Counter startup values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_wChannelTotal">The channel number.</param>
+            <param name="i_wValues">The counter startup values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_ClearOverflows(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Clear counter overflow flags.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">The channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_ClearAlarmFlags(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Clear counter alarm flags.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwMask">The alarm channel mask.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetAlarmFlags(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get counter alarm flags.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwAlarmFlags">The alarm flags.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetAlarmConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean@,System.Boolean@,System.Byte@,System.Byte@,System.UInt32@,System.Byte@,System.UInt32@)">
+            <summary>
+            Get counter alarm configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usAlarmIndex">The alarm index, based 0.</param>
+            <param name="o_bEnable">The alarm enable flag.</param>
+            <param name="o_bAutoReloadEn">The alarm auto reload flag.</param>
+            <param name="o_byType">The alarm type.</param>
+            <param name="o_byMappingCh">The alarm counter mapping.</param>
+            <param name="o_dwLimitValue">The alarm limit value.</param>
+            <param name="o_byDoType">The DO behavior type.</param>
+            <param name="o_dwDoPulseWidth">The DO pulse width.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetAlarmConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean,System.Boolean,System.Byte,System.Byte,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            Set counter alarm configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usAlarmIndex">The alarm index, based 0.</param>
+            <param name="i_bEnable">The alarm enable flag.</param>
+            <param name="i_bAutoReloadEn">The alarm auto reload flag.</param>
+            <param name="i_byType">The alarm type.</param>
+            <param name="i_byMappingCh">The alarm counter mapping.</param>
+            <param name="i_dwLimitValue">The alarm limit value.</param>
+            <param name="i_byDoType">The DO behavior type.</param>
+            <param name="i_dwDoPulseWidth">The DO pulse width.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetGateConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean@,System.Byte@,System.Byte@,System.Byte@)">
+            <summary>
+            Get counter gate configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel index, based 0.</param>
+            <param name="o_bEnable">The counter gate enable flag.</param>
+            <param name="o_byTriggerMode">The counter gate trigger mode. (0:Non-trigger,1:trigger,2:Edge start)</param>
+            <param name="o_byGateActiveType">The gate active type.</param>
+            <param name="o_byMappingGate">The counter gate mapping.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetGateConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Set Counter gate configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel index, based 0.</param>
+            <param name="i_bEnable">The counter gate enable flag.</param>
+            <param name="i_byTriggerMode">The counter gate trigger mode. (0:Non-trigger,1:trigger,2:Edge start)</param>
+            <param name="i_byGateActiveType">The gate active type.</param>
+            <param name="i_byMappingGate">The counter gate mapping.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetCntTypeConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean@,System.Boolean@)">
+            <summary>
+            Get counter counting type configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel index, based 0.</param>
+            <param name="o_bRepeat">Count mode, false:Count once;true:Count repetitively.</param>
+            <param name="o_bReload">Reload mode, true:reload to startup value ;false:reload to 0(OV) or 0xFFFFFFFF(UD).</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetCntTypeConfig(System.Int32,System.UInt16,System.UInt16,System.Boolean,System.Boolean)">
+            <summary>
+            Set counter counting type configuration.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel index, based 0.</param>
+            <param name="i_bRepeat">Count mode, false:Count once;true:Count repetitively.</param>
+            <param name="i_bReload">Reload mode, true:reload to startup value ;false:reload to 0(OV) or 0xFFFFFFFF(UD).</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_GetChannelStatus(System.Int32,System.UInt16,System.Byte[])">
+            <summary>
+            Get counter channel status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_byValues">The counter channel status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.CNT_SetFreqAcqTime(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set counter frequency acquisition time.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwValue">The counter frequency acquisition time value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.PWM_GetChannelMask(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get enabled PWM channel mask of the indicated slot.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">the slot ID which is ranged from 0 to 15.</param>
+            <param name="o_dwMask">the enabled PWM channel mask. From LSB to MSB of the value indicate the channel-0 to channel-31 enabled mask. 
+            						If the bit is 1, it means that the PWM channel start to output. Otherwise, stop output.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.PWM_SetChannelMask(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set enabled PWM channel mask of the indicated slot.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">the slot ID which is ranged from 0 to 15.</param>
+            <param name="i_dwMask">the enabled PWM channel mask to be set. From LSB to MSB of the value indicate the channel-0 to channel-31 enabled mask. 
+            						If the bit is 1, it means that the PWM channel start to output. Otherwise, stop output.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.PWM_GetConfig(System.Int32,System.UInt16,System.UInt16,System.UInt32@,System.Single@)">
+            <summary>
+            Get the channel configuration of the indicated slot.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot ID which is ranged from 0 to 15.</param>
+            <param name="i_usChannel">The channel index, start from 0.</param>
+            <param name="o_dwFrequency">A variable to hold the channel's frequency. [1 ~ 500K Hz]</param>
+            <param name="o_fDutyCycle">A variable to hold the channel's duty cycle. [0 ~ 100 %]</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.PWM_SetConfig(System.Int32,System.UInt16,System.UInt16,System.UInt32,System.Single)">
+            <summary>
+            Set the channel configuration of the indicated slot.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot ID which is ranged from 0 to 15.</param>
+            <param name="i_usChannel">The channel index, start from 0.</param>
+            <param name="i_dwFrequency">The frequency of the channel. [1 ~ 500K Hz]</param>
+            <param name="i_fDutyCycle">The duty cycle of the channel. [0 ~ 100 %]</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetKwMbData(System.Int32,System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Get Kw Modbus Data
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwStartAddr">The start address. 0~65535</param>
+            <param name="i_dwLength">The length of modbus data.</param>
+            <param name="o_byValues">The modbus data values</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetKwMbData(System.Int32,System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Set Kw Modbus Data
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwStartAddr">The start address. 0~65535</param>
+            <param name="i_dwLength">The length of modbus data.</param>
+            <param name="i_byValues">The modbus data values</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetRUNLED(System.Int32,System.Boolean@)">
+            <summary>
+            Get the RUN LED status
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_bRUNLED">The RUN LED status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetRUNLED(System.Int32,System.Boolean)">
+            <summary>
+            Set the RUN LED status
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_bRUNLED">The RUN LED status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_GetERRLED(System.Int32,System.Boolean@)">
+            <summary>
+            Get the ERR LED status
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_bERRLED">The ERR LED status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.ApaxAPI.SYS_SetERRLED(System.Int32,System.Boolean)">
+            <summary>
+            Set the ERR LED status
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_bERRLED">The ERR LED status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="T:Advantech.Common.AdsdioAPI">
+            <summary>
+            Summary description for AdsdioAPI.
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.ERR_ApiException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.ERR_SUCCESS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.DevErrorCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.MemoryAllocateFailed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.MapAddressFailed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.ERR_HANDLE_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.InvalidModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.ERR_SLOT_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.ERR_CHANNEL_INVALID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.InvalidFunction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.InitInterruptFailed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.FreqMeasurementFailed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.InvalidParam">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.FIFO_NotReady_Err">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.FIFO_Full_Err">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.FIFO_DataFail_Err">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Advantech.Common.AdsdioAPI.Acq_Stop_Err">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.#ctor">
+            <summary>
+            Adsdio constructor
+            </summary>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ADAMDrvOpen(System.Int32@)">
+            <summary>
+            Adam Controller driver open.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ADAMDrvClose(System.Int32@)">
+            <summary>
+            Adam controller driver close.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetADAM5550ARMFWVer(System.Int32,System.Single@)">
+            <summary>
+            Get the firmware version.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_sValue">The firmware version.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetCPLDVer(System.Int32,System.UInt16@)">
+            <summary>
+            Get the CPLD version.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_sValue">The CPLD version.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetNodeID(System.Int32,System.UInt16@)">
+            <summary>
+            Get node ID number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="o_usNodeID">The node ID number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetModuleID(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get the module ID.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usModuleID">The module ID number plugged in the slot.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetModuleID_EX(System.Int32,System.UInt16,System.UInt16@,System.Int32@)">
+            <summary>
+            Get the module ID and order.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usModuleID">The module ID number plugged in the slot.</param>
+            <param name="o_usOrder">The module order.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_WaitForADAM5550IOUpdate(System.Int32,System.UInt16,System.Int16@)">
+            <summary>
+            Check the internal update status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_iflag">1 means update ready, 0 means is not ready.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DI_GetValue(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get DI value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_bValue">The DI value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DI_GetValues(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get DI values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwValue">The DI value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DIO_GetUniversalStatus(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get universal status
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_dwStatus">The universal status. The lowest bit indicates channel 0. 
+            The bit value equals to 1 means the channel is DI channel; otherwise is DO channel.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DI_GetChannelTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get DI channel total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_iChannels">The channel total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DO_GetChannelTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get DO channel total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_iChannels">The channel total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DO_SetValues(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set DO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_dwValue">The DO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DO_SetValue(System.Int32,System.UInt16,System.UInt16,System.Boolean)">
+            <summary>
+            Set DO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_bValue">The DO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_GetValue(System.Int32,System.UInt16,System.UInt16,System.Single@)">
+            <summary>
+            Get AI value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The AI value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_GetValues(System.Int32,System.UInt16,System.Single[])">
+            <summary>
+            Get AI values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_fValue">The AI values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_GetChannelTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get AI channel total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_iChannels">The channel total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_GetInputRange(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            Get the AI input range.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_byRangeCode">The input range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_SetInputRange(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Set the AI input range.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_byRangeCode">The input range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_GetChannelEnabled(System.Int32,System.UInt16,System.Boolean[])">
+            <summary>
+            Get the AI channels enabled status.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_bEnabled">The channel enabled status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AI_SetChannelEnabled(System.Int32,System.UInt16,System.Boolean[])">
+            <summary>
+            Enable/Disable AI channels.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_bEnabled">The channel enabled status.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_GetChannelTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get the AO channel total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_iChannels">The channel total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_GetOutputRange(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            Get the AO output range.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_byRange">The output range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_SetOutputRange(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Set the AO output range.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_byRange">The output range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_GetValue(System.Int32,System.UInt16,System.UInt16,System.Single@)">
+            <summary>
+            Get AO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The AO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_GetValues(System.Int32,System.UInt16,System.Single[])">
+            <summary>
+            Get AO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_fValue">The AO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_SetValue(System.Int32,System.UInt16,System.UInt16,System.Single)">
+            <summary>
+            Set AO value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The AO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.AO_SetValues(System.Int32,System.UInt16,System.Single[])">
+            <summary>
+            Set the AO values.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_fValue">The AO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetModuleName(System.Int32,System.UInt16,System.Byte[])">
+            <summary>
+            Get AI module name
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_szName">The byte array of module name</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetValue(System.Int32,System.UInt16,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_ClearValue(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Clear Counter value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetRange(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            Get Counter range
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetRange(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Set Counter range
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetFilter(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter filter
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_sValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetFilter(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set Counter filter
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_sValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetStartup(System.Int32,System.UInt16,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter startup value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter startup value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetStartup(System.Int32,System.UInt16,System.UInt16,System.UInt32)">
+            <summary>
+            Set Counter startup value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter startup value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetState(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get Counter state
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter state value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetState(System.Int32,System.UInt16,System.UInt16,System.Boolean)">
+            <summary>
+            Set Counter state
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter state value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetOverflow(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get Counter overflow flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter overflow flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_ClearOverflow(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Clear counter overflow flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetAlarmFlag(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get Counter alarm flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter alarm flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_ClearAlarmFlag(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Clear counter alarm flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetAlarmType(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            Get Counter alarm type
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter alarm type.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetAlarmType(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Set Counter alarm type
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter alarm type.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetAlarmEnable(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get Counter alarm enable flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter alarm enable flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetAlarmEnable(System.Int32,System.UInt16,System.UInt16,System.Boolean)">
+            <summary>
+            Set Counter alarm enable flag
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter alarm enable flag.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetAlarmMap(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            Get Counter alarm mapping
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter alarm mapping.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetAlarmMap(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Set Counter alarm mapping
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter alarm mapping.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetAlarmLimit(System.Int32,System.UInt16,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter alarm limit value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter alarm limit.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetAlarmLimit(System.Int32,System.UInt16,System.UInt16,System.UInt32)">
+            <summary>
+            Set Counter alarm limit value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter alarm limit value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetDoValue(System.Int32,System.UInt16,System.UInt16,System.Boolean@)">
+            <summary>
+            Get Counter DO value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_sValue">The Counter DO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetDoValue(System.Int32,System.UInt16,System.UInt16,System.Boolean)">
+            <summary>
+            Set Counter DO value
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_sValue">The Counter DO value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetDoValues(System.Int32,System.UInt16,System.Byte@)">
+            <summary>
+            Get Counter DO values
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_sValue">The Counter DO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetDoValues(System.Int32,System.UInt16,System.Byte)">
+            <summary>
+            Set Counter DO values
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_sValue">The Counter DO values.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_GetKwMbData(System.Int32,System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Get Kw Modbus Data
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwStartAddr">The start address. 0~65535</param>
+            <param name="i_dwLength">The length of modbus data.</param>
+            <param name="o_byValues">The modbus data values</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.SYS_SetKwMbData(System.Int32,System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Set Kw Modbus Data
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_dwStartAddr">The start address. 0~65535</param>
+            <param name="i_dwLength">The length of modbus data.</param>
+            <param name="i_byValues">The modbus data values</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_GetFreqAcqTime(System.Int32,System.UInt16,System.UInt32@)">
+            <summary>
+            Get Counter filter
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_sValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.CNT_SetFreqAcqTime(System.Int32,System.UInt16,System.UInt32)">
+            <summary>
+            Set Counter filter
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_sValue">The Counter filter value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DEBUG_GetRegValue(System.Int32,System.UInt16,System.UInt16,System.Byte@)">
+            <summary>
+            (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="o_byValue">The register value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.DEBUG_SetRegValue(System.Int32,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            (Internal use)
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usChannel">The channel number, based 0.</param>
+            <param name="i_byValue">The register value.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetRange(System.Int32,System.UInt16,System.Byte@)">
+            <summary>
+            Get ODM ADAM-5017S range
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_sValue">The input range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetRange(System.Int32,System.UInt16,System.Byte)">
+            <summary>
+            Set ODM ADAM-5017S range
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_sValue">The input range.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetMode(System.Int32,System.UInt16,System.Byte@)">
+            <summary>
+            Get ODM ADAM-5017S acquisition mode
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_sValue">The acquisition mode. 1:cyclic mode, 0:non-cyclic mode</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetMode(System.Int32,System.UInt16,System.Byte)">
+            <summary>
+            Set ODM ADAM-5017S acquisition mode
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_sValue">The acquisition mode. 1:cyclic mode, 0:non-cyclic mode</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetTrigTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get ODM ADAM-5017S trigger total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usValue">The trigger total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetTrigTotal(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Set ODM ADAM-5017S trigger total number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usValue">The trigger total number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetSampleRate(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get ODM ADAM-5017S sampling rate.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usValue">The sampling rate.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetSampleRate(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Set ODM ADAM-5017S sampling rate.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usValue">The sampling rate.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetEnableChannelTotal(System.Int32,System.UInt16,System.UInt16@)">
+            <summary>
+            Get ODM ADAM-5017S enable channel number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usValue">The enable channel number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetEnableChannelTotal(System.Int32,System.UInt16,System.UInt16)">
+            <summary>
+            Set ODM ADAM-5017S enable channel number.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="i_usValue">The enable channel number.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetStart(System.Int32,System.UInt16)">
+            <summary>
+            ODM ADAM-5017S start to get value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_SetStop(System.Int32,System.UInt16)">
+            <summary>
+            ODM ADAM-5017S stop getting value.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+        <member name="M:Advantech.Common.AdsdioAPI.ODM17S_GetFifoData(System.Int32,System.UInt16,System.UInt16[])">
+            <summary>
+            Get ODM ADAM-5017S fifo data.
+            </summary>
+            <param name="handle">The driver handle.</param>
+            <param name="i_usSlot">The slot number, based 0.</param>
+            <param name="o_usValue">The fifo data.</param>
+            <returns>Return 0 if success; otherwise, return error code.</returns>
+        </member>
+    </members>
+</doc>
